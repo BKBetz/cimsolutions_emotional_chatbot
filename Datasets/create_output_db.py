@@ -18,6 +18,7 @@ data = [
     (" Ik begrijp dat je het niet leuk vindt. Ik ge voor jou een oplossing zoeken.", "angry", 0),
     ("Laten we kijken wat er aan de hand is en bekijken hoe we het kunnen oplossen.", "angry", 0),
     ("Laten we kalm blijven en samen naar een bruikbare oplossing zoeken.", "angry", 0),
+    ("Als er zaken zijn die moeten worden opgelost, laten we ze uitzoeken  en aanpakken.", "angry", 0),
     ("Fijn om te horen dat je tevreden bent!", "joy", 0),
     ("Het is goed om te horen dat je zo blij bent!", "joy", 0),
     ("Dat is goed nieuws, fijn!", "joy", 0),
