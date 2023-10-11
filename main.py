@@ -1,7 +1,10 @@
+"""Starting main.py for the first time may take some time because it needs to import all models"""
+
 from transformers import RobertaTokenizer
 import torch
 from torch import cuda
 from ed_model.RobbertModel import RobbertModel
+from chatbot.Chatbot import Chatbot
 
 device = 'cuda' if cuda.is_available() else torch.device('cpu')
 
@@ -13,3 +16,4 @@ model = torch.load(ed_path, map_location=torch.device('cpu'))
 model.eval()
 
 robbert = RobbertModel(model, tokenizer, device)
+chatbot = Chatbot()
