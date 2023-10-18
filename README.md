@@ -17,3 +17,4 @@ There is a endproduct notebook in the notebooks folder. This notebook can be ope
 The notebook contains all the seperate products with small explainations. Note that it was made with google collab in google drive.
 In order to make the project work you need to change the variables **path** and **db_path** to the correct path for your file structure.
 
+**Possibly** Git lfs is needed to clone the project due to the model size. Use git lfs clone instead. [git lfs docs](https://git-lfs.com/)
