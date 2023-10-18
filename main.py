@@ -77,12 +77,12 @@ class ConversationAgent:
 
     def forward(self, text: str) -> str:
         # get response
-        cb_output =  self.cb_response(text)
+        cb_output = self.cb_response(text)
         retrieval_output = self.get_rbo(text)
-        combined = self.combine_outputs(cb_output, retrieval_output)
-        if retrieval_output ==  None:
+        if retrieval_output == None:
             return cb_output
         else:
+            combined = self.combine_outputs(cb_output, retrieval_output)
             return combined
 
 

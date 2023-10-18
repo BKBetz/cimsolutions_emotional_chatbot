@@ -20,12 +20,12 @@ class RetrievalOutput:
         # in this function get the emotion of a text
         emotion = self.ed_model.predict(text)
         # small print statement to show in the test conversation
-        print("detected_emotion: ", emotion)
+        print("detected_emotion:", emotion.strip(" "))
         return emotion
 
     def get_output(self, emotion:str):
         # retrieve from db using policy greedy
-        if emotion != "neutral" or emotion != "other":
+        if emotion != "neutral" and emotion != "other":
           rd_int = round(rd.random(), 2)
           if rd_int > self.epsilon:
             # random
@@ -91,8 +91,8 @@ class RetrievalOutput:
         self.save(text, rb_output, emotion)
         self.grade()
 
-        if rb_output is None:
-            return rb_output
+        if rb_output == None:
+            return None
 
         else:
             return rb_output[1]
